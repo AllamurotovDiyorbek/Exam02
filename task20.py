@@ -1,5 +1,5 @@
 students = [
-    {'name': 'Ali', 'age': 18},
+    {'name': 'Ali', 'age': 28},
     {'name': 'Jasurbek', 'age': 20},
     {'name': 'Diyor', 'age': 19},
     {'name': 'Muhammad', 'age': 21}
