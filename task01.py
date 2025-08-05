@@ -2,14 +2,19 @@ def calculator(son1:int,son2:int,amal:str):
     natija=0
     if amal in ["*","/","+","-"]:
         if amal=="*":
-            natija=soni*son2
+            natija=son1*son2
         elif amal=="/":
-            natija=soni/son2
+            natija=son1/son2
         elif amal=="+":
             natija=son1+son2
         elif amal=="-":
             natija=son1-son2
-        print(natija)
+        return f'{son1}{amal}{son2}={natija}'
     else:
-        print("Amal faqat: -,+,*,/ ")
-calculator(int(input("SON1 ")),int(input("SON2 ")),input("Amal: "))
+        return "Amal faqat: -,+,*,/ "
+son1=int(input("SON1: "))
+son2=int(input("SON2: "))
+print("Amal faqat: -,+,*,/ ")
+amal=input("Amal:")
+calculate=calculator(son1,son2,amal)
+print(calculate)

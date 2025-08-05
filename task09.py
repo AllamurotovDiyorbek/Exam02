@@ -4,5 +4,6 @@ def  nine(file1,file2):
         for i in f.readlines():
             if c<int(i):
                 c=int(i)
-        s.write(f"Eng katta son: {str(c)}")
+        s.write(f"Eng katta son: {c}")
+
 nine("Input/numbers.txt","Output/output09.txt")

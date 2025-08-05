@@ -1,11 +1,9 @@
 import json
-with open("Input/students.json","r") as f:
+with open("Input/students.json","r") as f,open("Output/output12.json","w") as h:
     content=f.read()
     data=json.loads(content)
-    c=[]
+    sort_name=[]
     for i in data:
-        c.append(i['name'])
-        
-with open("Output/output11.json","w") as h:
-    jso=json.dumps({"count":len(data)},indent=3)
-    h.write(json)
+        sort_name.append(i['name'])
+    sort_name.sort()
+    h.write(json.dumps({"sorted_names":sort_name},indent=4))
