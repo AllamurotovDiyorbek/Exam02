@@ -1,2 +1,4 @@
 names = ['Ali', 'Diyor', 'Jasurbek', 'Muhammad']
-print(max(names))
+def max_name(names):
+      return max(names)
+print(max_name(names))
