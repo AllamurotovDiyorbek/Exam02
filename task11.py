@@ -1,5 +1,4 @@
 import json
-sw=None
 with open("Input/students.json","r") as f:
     content=f.read()
     data=json.loads(content)
